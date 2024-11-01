@@ -1,0 +1,122 @@
+@import '../styles/global';
+
+.documentation-section {
+  padding: 4rem 2rem;
+  background: $background-color;
+  text-align: center;
+
+  h2 {
+    color: $text-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .documentation-description {
+    font-size: 1.1rem;
+    color: $secondary-text-color;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .documentation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .documentation-card {
+    background: $secondary-background-color;
+    color: $text-color;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+    text-align: left;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: $spacing-large;
+
+    .documentation-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: $white;
+      text-align: center;
+    }
+
+    .documentation-text {
+      font-size: 0.95rem;
+      color: $text-color;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .card-title-divider {
+      width: 50%;
+      height: 1px;
+      background-color: $primary-color;
+      opacity: 0.8;
+      margin: $spacing-small 0;
+    }
+
+    .subtype-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+
+      .subtype-item {
+        margin: 0.3rem 0;
+        display: flex;
+        justify-content: center;
+
+        a {
+          display: inline-flex;
+          justify-content: center;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          background-color: $primary-color;
+          color: $white;
+          border-radius: 4px;
+          font-size: 0.9rem;
+          text-decoration: none;
+          transition: background-color 0.2s;
+
+          &:hover {
+            background-color: $accent-color;
+          }
+        }
+      }
+    }
+
+    .documentation-button {
+      font-size: 0.9rem;
+      padding: 0.75rem 1.25rem;
+      background-color: $primary-color;
+      color: $white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+      width: 100%;
+
+      &:hover {
+        background-color: $accent-color;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba($primary-color, 0.4);
+      }
+    }
+  }
+}
