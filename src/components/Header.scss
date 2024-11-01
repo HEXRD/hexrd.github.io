@@ -1,0 +1,24 @@
+@import '../styles/global';
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $secondary-background-color;
+  padding: $spacing-small 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: $text-color;
+  margin: 0 $spacing-medium;
+  font-weight: bold;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $primary-color;
+  }
+}

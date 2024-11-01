@@ -1,0 +1,78 @@
+@import '../styles/global';
+
+.funders-section {
+  padding: 4rem 2rem;
+  background: $background-color;
+  text-align: center;
+
+  h2 {
+    color: $text-color;
+    margin-bottom: 1.5rem;
+  }
+
+  .funders-description {
+    font-size: 1.1rem;
+    color: $secondary-text-color;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .funders-grid {
+    display: flex;
+    flex-wrap: wrap; // Allow cards to wrap onto new lines
+    gap: 30px; // Space between cards
+    justify-content: center; // Center the cards horizontally
+    padding: 1.5rem;
+    align-items: stretch; // Ensures all cards stretch to the same height
+  }
+
+  .funder-card {
+    width: 200px; // Fixed width for each card
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background: $secondary-background-color;
+    box-shadow: $box-shadow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; // Ensure each card fills the available height in the row
+
+    &:hover {
+      transform: translateY(-5px); // Lift effect on hover
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .funder-logo {
+      width: 80px; // Consistent logo size
+      height: auto;
+      margin-bottom: 0.5rem;
+      border-radius: 50%; // Rounded logo style
+      background-color: #ccc;
+    }
+
+    .funder-name {
+      font-size: 1rem;
+      color: $text-color;
+      margin: 0;
+    }
+  }
+
+  .hover-enabled {
+    cursor: pointer;
+
+    &:hover .funder-card {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Hover effect only for clickable cards
+    }
+  }
+
+  .funder-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+}

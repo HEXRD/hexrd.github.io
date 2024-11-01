@@ -1,0 +1,99 @@
+@import '../styles/global';
+
+.contributors-wrapper {
+  padding: 4rem 2rem;
+  background: $background-color;
+  text-align: center;
+
+  h2, h3 {
+    color: $text-color;
+    margin: 1.5rem 0;
+  }
+}
+
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: stretch;
+}
+
+.contributor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $secondary-background-color;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: $box-shadow;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.hover-enabled {
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.profile-image {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  background-color: #ccc;
+}
+
+.contributor-info {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.contributor-name {
+  margin: 0;
+  font-size: 1.2rem;
+  color: $text-color;
+}
+
+.contributor-bio {
+  margin: 0.5rem 0 0;
+  font-size: 1rem;
+  color: $secondary-text-color;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+  
+  .social-icon {
+    font-size: 24px;
+    color: $primary-color;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      color: $accent-color;
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Ensuring the <a> tag fills the card area if clickable
+.contributor-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover .contributor-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
