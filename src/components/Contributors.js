@@ -70,16 +70,16 @@ const individual_contributors = [
   {
     name: "Kelly Nygren",
     bio: "Researcher working on research.",
-    imageUrl: null,
+    imageUrl: "/images/individuals/kelly_nygren.jpg",
     socials: {
-      github: null,
+      github: "https://github.com/kenygren",
       linkedin: null
     }
   },
   {
     name: "Sven Gustafson",
     bio: "Researcher working on research.",
-    imageUrl: null,
+    imageUrl: "/images/individuals/sven_gustafson.jpg",
     socials: {
       github: "https://github.com/gusfasonsven",
       linkedin: null
@@ -88,7 +88,7 @@ const individual_contributors = [
   {
     name: "Chris Budrow",
     bio: "Researcher working on research.",
-    imageUrl: null,
+    imageUrl: "/images/individuals/chris_budrow.jpg",
     socials: {
       github: null,
       linkedin: null
