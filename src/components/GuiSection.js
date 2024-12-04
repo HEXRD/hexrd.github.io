@@ -1,4 +1,5 @@
 import React from "react";
+import "./GuiSection.scss";
 
 const GuiSection = () => (
     <section id="gui" style={{ padding: "2rem" }}>
@@ -12,27 +13,9 @@ const GuiSection = () => (
             and processing X-ray diffraction image data images using the generic
             multi-detector instrument model in HEXRD.
         </p>
-        <div
-            style={{
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "row",
-                height: "30em",
-                justifyContent: "space-evenly",
-                marginTop: "2em",
-            }}
-        >
+        <div id="images">
+            <img src="images/rotation_series.png" alt="Diffraction" />
             <img
-                style={{
-                    height: "100%",
-                }}
-                src="images/rotation_series.png"
-                alt="Diffraction"
-            />
-            <img
-                style={{
-                    height: "100%",
-                }}
                 src="images/tardis_powder_and_laue_overlays.png"
                 alt="Tardis powder and laue overlays"
             />

@@ -1,7 +1,7 @@
 @import '../styles/global';
 
 .publications-section {
-  padding: 4rem 2rem;
+  padding: 0em 0rem;
   background: $background-color;
   text-align: center;
 
@@ -22,18 +22,18 @@
   .publications-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 0.5em;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 0em;
   }
 
   .publication-card {
-    width: 250px;
+    width: 22em;
     display: flex;
     flex-direction: column;
     background: $secondary-background-color;
     color: $text-color;
-    padding: 1.5rem;
+    padding: .25em;
     border-radius: 8px;
     box-shadow: $box-shadow;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -45,26 +45,26 @@
     }
 
     .publication-title {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
       color: $white;
     }
 
     .publication-authors {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
       color: $secondary-text-color;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.3em;
     }
 
     .publication-abstract {
-      font-size: 0.95rem;
+      font-size: 0.6rem;
       color: $text-color;
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
 
     .publication-date {
-      font-size: 0.85rem;
+      font-size: 0.65em;
       color: $secondary-text-color;
       margin-top: auto;
       text-align: right;
