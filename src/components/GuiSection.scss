@@ -1,16 +1,16 @@
 #gui {
     #images {
         display: flex;
-        height: 30em;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         margin-top: 2em;
-
+        flex-wrap: wrap;
+        gap: 1em;
         img {
-            height: 100%;
+            max-width: 75vw;
+            max-height: 25em;
             border-radius: 0.75em;
         }
-
     }
 }

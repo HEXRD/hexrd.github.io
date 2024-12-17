@@ -18,15 +18,21 @@
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .publications-grid {
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
     justify-content: center;
     padding: 0em;
+    max-height: 17em;
+    transition: max-height 1s ease-in-out;
+    &.expanded {
+      max-height: 150em;
+      transition: max-height 1s ease-in-out;
+    }
   }
-
   .publication-card {
     width: 22em;
     display: flex;
@@ -64,10 +70,65 @@
     }
 
     .publication-date {
+      font-weight: bold;
       font-size: 0.65em;
-      color: $secondary-text-color;
       margin-top: auto;
       text-align: right;
+    }
+
+    .publication-badges {
+      display: flex;
+
+      p {
+        font-size: 0.65em;
+        border-radius: 4px;
+        height: fit-content;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        margin-left: 0.1em;
+        margin-right: 0.1em;
+        color: black;
+        font-weight: bold;
+      }
+      .EDD {
+        background-color: #ffce80;
+      }
+      .Laue {
+        background-color: #9dff80;
+      }
+
+      .Powder {
+        background-color: #ff7070;
+      }
+      .HEDM {
+        background-color: #708fff;
+      }
+    }
+
+    .publications-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .spacer {
+      flex-grow: 1;
+    }
+  }
+
+  .publications-button {
+    background-color: transparent;
+    border:0;
+    color: $white;
+    margin-top: 2em;
+    
+    svg {
+      transform: rotate(0);
+      transition: transform 1s ease;
+      width: 2em;
+      &.flipped {
+        transform: rotate(180deg);
+        transition: transform 1s ease;
+      }
     }
   }
 }
