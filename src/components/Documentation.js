@@ -11,10 +11,10 @@ const documentationData = [
     title: "Workflow Guides",
     description: "Detailed workflows for HEDM, Powder, Laue, and EDD analysis.",
     subtypes: [
-      { name: "HEDM Documentation", link: "https://example.com/hedm-guide" },
-      { name: "Powder Documentation", link: "https://example.com/powder-guide" },
-      { name: "Laue Documentation", link: "https://example.com/laue-guide" },
-      { name: "EDD Documentation", link: "https://example.com/edd-guide" }
+      { name: "HEDM Documentation", link: "https://hexrd.readthedocs.io/en/latest/users/index.html" },
+      { name: "Powder Documentation", link: "https://hexrd.readthedocs.io/en/latest/users/index.html" },
+      { name: "Laue Documentation", link: "https://hexrd.readthedocs.io/en/latest/users/index.html" },
+      { name: "EDD Documentation", link: "https://hexrd.readthedocs.io/en/latest/users/index.html" }
     ]
   },
   {
@@ -26,9 +26,9 @@ const documentationData = [
     title: "Developer Resources",
     description: "Guidelines and reference material for developers contributing to the HEXRD project.",
     subtypes: [
-      { name: "Contributing to the GUI", link: "https://hexrdgui.readthedocs.io/en/latest/contributing" },
+      // { name: "Contributing to the GUI", link: "https://hexrdgui.readthedocs.io/en/latest/contributing" },
       { name: "Contributing to the Library", link: "https://example.com/cli-contrib" },
-      { name: "Technical Discussion", link: "https://hexrd.readthedocs.io/en/latest/dev/index.html" },
+      { name: "Technical Discussion", link: "https://github.com/HEXRD/hexrd/discussions" },
     ]
   }
 ];
