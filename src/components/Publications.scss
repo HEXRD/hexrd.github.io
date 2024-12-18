@@ -1,5 +1,27 @@
 @import '../styles/global';
 
+
+/* width */
+.publications-section ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.publications-section ::-webkit-scrollbar-track {
+  background: $background-color;
+}
+
+/* Handle */
+.publications-section ::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.publications-section ::-webkit-scrollbar-thumb:hover {
+  background: $primary-color-dark;
+}
+
 .publications-section {
   padding: 0em 0rem;
   background: $background-color;
@@ -21,17 +43,21 @@
   
   .publications-grid {
     overflow: hidden;
+    overflow-x: scroll;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em;
+    flex-direction: column;
     justify-content: center;
+    gap: 0.5em;
     padding: 0em;
-    max-height: 17em;
-    transition: max-height 1s ease-in-out;
-    &.expanded {
-      max-height: 150em;
-      transition: max-height 1s ease-in-out;
-    }
+    height: 40em;
+    // max-height: 17em;
+    // transition: max-height 1s ease-in-out;
+    // &.expanded {
+    //   max-height: 150em;
+    //   transition: max-height 1s ease-in-out;
+    // }
+
   }
   .publication-card {
     width: 22em;
@@ -91,17 +117,17 @@
         font-weight: bold;
       }
       .EDD {
-        background-color: #ffce80;
+        background-color: $workflow-color-edd;
       }
       .Laue {
-        background-color: #9dff80;
+        background-color: $workflow-color-laue
       }
 
       .Powder {
-        background-color: #ff7070;
+        background-color: $workflow-color-powder;
       }
       .HEDM {
-        background-color: #708fff;
+        background-color: $workflow-color-hedm;
       }
     }
 

@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Publications.scss";
 
 import { publications } from "./.publications.js";
 
 const Publications = () => {
-    const [expanded, setExpanded] = useState(false);
-
     return (
         <section id="publications" className="publications-section">
             <h2>Publications on HEXRD</h2>
@@ -14,9 +12,7 @@ const Publications = () => {
                 advancements of HEXRD in diffraction analysis and material
                 science.
             </p>
-            <div
-                className={"publications-grid " + (expanded ? "expanded" : "")}
-            >
+            <div className="publications-grid">
                 {publications
                     .sort((a, b) => new Date(b.date) - new Date(a.date))
                     .map((pub, index) => (
@@ -46,35 +42,6 @@ const Publications = () => {
                             </div>
                         </a>
                     ))}
-            </div>
-            <div className="publications-button-container">
-                <button
-                    className="publications-button"
-                    onClick={() => setExpanded(!expanded)}
-                >
-                    {expanded ? (
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill="currentColor"
-                                d="m2.5 15.25l7.5-7.5l7.5 7.5l1.5-1.5l-9-9l-9 9z"
-                            />
-                        </svg>
-                    ) : (
-                        <svg
-                            className="flipped"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill="currentColor"
-                                d="m2.5 15.25l7.5-7.5l7.5 7.5l1.5-1.5l-9-9l-9 9z"
-                            />
-                        </svg>
-                    )}
-                </button>
             </div>
         </section>
     );
