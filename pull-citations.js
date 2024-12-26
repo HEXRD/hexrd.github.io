@@ -4,38 +4,39 @@ const { Cite, plugins } = require("@citation-js/core");
 require("@citation-js/plugin-doi");
 require("@citation-js/plugin-csl");
 require("@citation-js/plugin-bibtex");
+require("@citation-js/plugin-software-formats");
 
 const config = plugins.config.get("@bibtex");
 
 const publications = [
-    { doi: "https://doi.org/10.1016/j.jmps.2017.12.007", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.cemconres.2020.105989", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.surfcoat.2023.129811", workflows: [] },
-    { doi: "https://doi.org/10.3390/ma16093397", workflows: ["Laue"] },
-    { doi: "https://doi.org/10.1088/1361-648X/aca860", workflows: [] },
+    { doi: "https://doi.org/10.1016/j.jmps.2017.12.007", labels: [] },
+    { doi: "https://doi.org/10.1016/j.cemconres.2020.105989", labels: [] },
+    { doi: "https://doi.org/10.1016/j.surfcoat.2023.129811", labels: [] },
+    { doi: "https://doi.org/10.3390/ma16093397", labels: ["Laue"] },
+    { doi: "https://doi.org/10.1088/1361-648X/aca860", labels: [] },
     {
         doi: "https://doi.org/10.1088/1757-899X/580/1/012018",
-        workflows: ["HEDM"],
+        labels: ["HEDM"],
     },
-    { doi: "https://doi.org/10.1007/s40192-022-00281-4", workflows: [] },
-    { doi: "https://doi.org/10.56952/ARMA-2023-0958", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.jmps.2020.104192", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.matchar.2024.114432", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.ijplas.2024.104076", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.actamat.2023.119567", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.actamat.2023.119300", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.matchar.2023.112692", workflows: [] },
-    { doi: "https://doi.org/10.1038/s41467-022-33437-z", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.ijfatigue.2022.107113", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.actamat.2022.118039", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.msea.2021.142498", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.actamat.2021.117120", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.msea.2021.141034", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.ijplas.2021.103087", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.mtla.2021.101063", workflows: [] },
-    { doi: "https://doi.org/10.1038/s41467-020-16894-2", workflows: [] },
-    { doi: "https://doi.org/10.1038/s41598-019-54724-8", workflows: [] },
-    { doi: "https://doi.org/10.1016/j.actamat.2020.05.019", workflows: [] },
+    { doi: "https://doi.org/10.1007/s40192-022-00281-4", labels: [] },
+    { doi: "https://doi.org/10.56952/ARMA-2023-0958", labels: [] },
+    { doi: "https://doi.org/10.1016/j.jmps.2020.104192", labels: [] },
+    { doi: "https://doi.org/10.1016/j.matchar.2024.114432", labels: [] },
+    { doi: "https://doi.org/10.1016/j.ijplas.2024.104076", labels: [] },
+    { doi: "https://doi.org/10.1016/j.actamat.2023.119567", labels: [] },
+    { doi: "https://doi.org/10.1016/j.actamat.2023.119300", labels: [] },
+    { doi: "https://doi.org/10.1016/j.matchar.2023.112692", labels: [] },
+    { doi: "https://doi.org/10.1038/s41467-022-33437-z", labels: [] },
+    { doi: "https://doi.org/10.1016/j.ijfatigue.2022.107113", labels: [] },
+    { doi: "https://doi.org/10.1016/j.actamat.2022.118039", labels: [] },
+    { doi: "https://doi.org/10.1016/j.msea.2021.142498", labels: [] },
+    { doi: "https://doi.org/10.1016/j.actamat.2021.117120", labels: [] },
+    { doi: "https://doi.org/10.1016/j.msea.2021.141034", labels: [] },
+    { doi: "https://doi.org/10.1016/j.ijplas.2021.103087", labels: [] },
+    { doi: "https://doi.org/10.1016/j.mtla.2021.101063", labels: [] },
+    { doi: "https://doi.org/10.1038/s41467-020-16894-2", labels: [] },
+    { doi: "https://doi.org/10.1038/s41598-019-54724-8", labels: [] },
+    { doi: "https://doi.org/10.1016/j.actamat.2020.05.019", labels: [] },
     {
         bibtex: `@article{hurley2018characterization,
                     title={Characterization of the crystal structure, kinematics, stresses and rotations in angular granular quartz during compaction},
@@ -47,17 +48,17 @@ const publications = [
                     year={2018},
                     publisher={International Union of Crystallography}
                 }`,
-        workflows: [],
+        labels: [],
     },
-    { doi: "https://doi.org/10.1063/5.0161343", workflows: [] },
-    { doi: "https://doi.org/10.1063/5.0088607", workflows: [] },
-    { doi: "https://doi.org/10.1063/5.0095654", workflows: [] },
-    { doi: "https://doi.org/10.1063/5.0072208", workflows: ["Powder"] },
+    { doi: "https://doi.org/10.1063/5.0161343", labels: [] },
+    { doi: "https://doi.org/10.1063/5.0088607", labels: [] },
+    { doi: "https://doi.org/10.1063/5.0095654", labels: [] },
+    { doi: "https://doi.org/10.1063/5.0072208", labels: ["Powder"] },
 ];
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function formatCite({ cite, workflows }) {
+function formatCite({ cite, labels }) {
     return {
         title: cite.data[0].title,
         authors: cite.data[0].author
@@ -66,7 +67,7 @@ function formatCite({ cite, workflows }) {
         abstract: cite.data[0].abstract,
         date: cite.data[0].issued["date-parts"][0].join("-"),
         link: cite.data[0].URL,
-        workflows,
+        labels,
     };
 }
 
@@ -84,11 +85,11 @@ async function main() {
     console.log("Emitting publications to ", file);
 
     const citations = [];
-    for (const { doi, bibtex, workflows } of publications) {
+    for (const { doi, bibtex, labels } of publications) {
         // Avoid 429s
         await delay(200);
         const cite = await Cite.async(doi || bibtex);
-        citations.push({ cite, workflows });
+        citations.push({ cite, labels });
         console.log("Fetched", cite.data[0].title);
     }
 

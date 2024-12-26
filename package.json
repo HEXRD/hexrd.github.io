@@ -8,6 +8,7 @@
     "@citation-js/plugin-bibtex": "^0.7.16",
     "@citation-js/plugin-csl": "^0.7.14",
     "@citation-js/plugin-doi": "^0.7.16",
+    "@citation-js/plugin-software-formats": "^0.6.1",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",

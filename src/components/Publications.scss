@@ -3,7 +3,7 @@
 
 /* width */
 .publications-section ::-webkit-scrollbar {
-  width: 10px;
+  width: 1em;
 }
 
 /* Track */
@@ -40,23 +40,101 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+
+  .EDD {
+    background-color: $workflow-color-edd;
+  }
+  .Laue {
+    background-color: $workflow-color-laue
+  }
+
+  .Powder {
+    background-color: $workflow-color-powder;
+  }
+  .HEDM {
+    background-color: $workflow-color-hedm;
+  }
+  .Library.Contribution {
+    background-color: $primary-color-desaturated;
+  }
+
+
+  .publications-search  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      font-size: large;
+      background-color: $secondary-background-color;
+      border: 0;
+      border-bottom: 0.1em solid $primary-color;
+      color: $text-color;
+    }
+
+    input:focus {
+      outline: 0.2em solid $attention-color;
+    }
+
+    [type="checkbox"]{
+      display: none;
+    }
+
+    .label-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5em;
+      margin-left: 1em;
+
+      label {
+        border-radius: 4px;
+        color: black;
+        font-weight: bold;
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        cursor: pointer;
+
+        border-width: 1px;
+
+      }
+
+      label.active {
+        outline: 0.2em solid $attention-color;
+      }
+    }
+  }
+
   
   .publications-grid {
     overflow: hidden;
-    overflow-x: scroll;
+    overflow-y: scroll;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     gap: 0.5em;
     padding: 0em;
     height: 40em;
-    // max-height: 17em;
-    // transition: max-height 1s ease-in-out;
-    // &.expanded {
-    //   max-height: 150em;
-    //   transition: max-height 1s ease-in-out;
-    // }
+    transition: all 0.5s ease;
+    margin-top: 2em;
+
+    a {
+      height: 15em;
+      transition: all 0.5s ease;
+    }
+
+    .filtered {
+      height: 0;
+      width: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+
+      transition: all 0.5s ease;
+    }
 
   }
   .publication-card {
@@ -115,19 +193,6 @@
         margin-right: 0.1em;
         color: black;
         font-weight: bold;
-      }
-      .EDD {
-        background-color: $workflow-color-edd;
-      }
-      .Laue {
-        background-color: $workflow-color-laue
-      }
-
-      .Powder {
-        background-color: $workflow-color-powder;
-      }
-      .HEDM {
-        background-color: $workflow-color-hedm;
       }
     }
 
