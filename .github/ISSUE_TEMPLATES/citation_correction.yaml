@@ -1,0 +1,26 @@
+name: "\U0001F41E Citation Correction"
+description: Provide Citation Related Feedback
+labels: ['type: citation']
+body:
+  - type: input
+    id: DOI
+    attributes:
+      label: DOI
+      description: |
+        Enter the DOI of the paper you are referencing.
+      placeholder:
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue 
+    attributes:
+      label: Issue Description
+      description: >
+        Let us know what is wrong with the citation. Common issues include:
+        - Missing publication
+        - Incorrect publication information
+        - Incorrect labeling
+    validations:
+      required: true
+      
