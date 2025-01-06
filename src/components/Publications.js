@@ -65,6 +65,10 @@ const Publications = () => {
                         </label>
                     ))}
                 </div>
+                <a href="https://github.com/HEXRD/hexrd.github.io/issues/new?assignees=&labels=type%3A+citation&projects=&template=citation_correction.yaml"
+                    target="_blank" rel="noopener noreferrer">
+                    See something wrong? Let us know!
+                </a>
             </div>
             <div className="publications-grid">
                 {publications
