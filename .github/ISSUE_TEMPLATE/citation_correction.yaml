@@ -16,7 +16,7 @@ body:
     id: issue 
     attributes:
       label: Issue Description
-      description: >
+      description: |
         Let us know what is wrong with the citation. Common issues include:
         - Missing publication
         - Incorrect publication information
