@@ -132,6 +132,15 @@ const individual_contributors = [
         },
     },
     {
+        name: "Christos Tsolakis",
+        bio: "Developer",
+        imageUrl: "/images/individuals/christos_tsolakis.jpg",
+        socials: {
+            github: "https://github.com/christost",
+            linkedin: "https://www.linkedin.com/in/christos-tsolakis/",
+        },
+    },
+    {
         name: "Zack Singer",
         bio: "Developer",
         imageUrl: "/images/individuals/zack_singer.png",
