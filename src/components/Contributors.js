@@ -141,6 +141,15 @@ const individual_contributors = [
         },
     },
     {
+        name: "Donald Boyce",
+        bio: "Developer",
+        imageUrl: null,
+        socials: {
+            github: "https://github.com/donald-e-boyce",
+            linkedin: null,
+        },
+    },
+    {
         name: "Zack Singer",
         bio: "Developer",
         imageUrl: "/images/individuals/zack_singer.png",
